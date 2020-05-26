@@ -23,7 +23,7 @@ const route = (itemRouteData, router) => {
  */
 const init = (itemRouteData, router) => {
   // 生成markdown接口文档
-  Markdown.createMd(itemRouteData);
+  Markdown.createMd(itemRouteData, 'apCliMD');
   // 初始化接口
   route(itemRouteData, router);
 };
